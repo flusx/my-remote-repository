@@ -13,8 +13,8 @@
                     <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a> </li>
                     <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a> </li>
                 </ul>
-                <ul class="navigation-list navigation-user">
-                    <li class="navigation-user">
+                <ul class="navigation-list navigation-item">
+                    <li class="navigation-item">
                         <a class="navigation-link" href="#">
                             <span class="visually-hidden">Поиск</span>
                             <svg 
@@ -32,7 +32,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="navigation-user">
+                    <li class="navigation-item">
                         <a class="navigation-link" href="#">
                             <span class="visually-hidden">Корзина</span>
                             <svg 
@@ -49,8 +49,39 @@
                                 />
                             </svg>
                         </a> 
+                        <div class="popover popover-cart">
+                            <button class="popover-close-button button button-light">
+                                2
+                                <span class="visually-hidden">Закрыть</span>
+                              </button>
+                            <div class="popover-content">
+                              <h2 class="popover-title">Корзина</h2>
+                              <ul class="cart-items-list">
+                                <li class="cart-item">
+                                  <p class="cart-item-title">Стрижка машинкой</p>
+                                  <p class="cart-item-price">800 ₽</p>
+                                  <button type="button" class="cart-item-button button">
+                                    <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+                                    </svg>
+                                    <span class="visually-hidden">Удалить из корзины</span>
+                                  </button>
+                                </li>
+                                <li class="cart-item">
+                                    <p class="cart-item-title">Стрижка усов</p>
+                                    <p class="cart-item-price">1200 ₽</p>
+                                    <button class="cart-item-button button" type="button">
+                                      <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+                                      </svg>
+                                      <span class="visually-hidden">Удалить из корзины</span>
+                                    </button>
+                                  </li>
+                              </ul>
+                            </div>
+                        </div>
                     </li>
-                    <li class="navigation-user">
+                    <li class="navigation-item">
                         <a class="navigation-link" href="#">
                             <span class="visually-hidden">Вход</span>
                             <svg 
@@ -72,193 +103,344 @@
                 </ul>
             </nav>
         </header>
-        <main class="main-index">
-            <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
-            <div class="logo">
-                <img src="img/logo-full-dark.svg" alt="Логотип барбершопа Бородинский">
+        <main class="main-index main-container">
+            <div class="page-container">
+                <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+                <img class="logo" src="img/logo-full-dark.svg" alt="Логотип барбершопа Бородинский">
+                <section class="advantages">
+                    <h2 class="visually-hidden">Преимущества</h2>
+                    <ul class="advantages-list">
+                        <li class="advantages-item">
+                            <h3 class="advantages-title">Быстро</h3>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 3L21.8022 12L12.5 21L3.19775 12L12.5 3Z" fill="white"/>
+                            </svg>
+                                
+                            <p class="advantages-description">Мы делаем свою работу быстро! 
+                                Два часа пролетят незаметно, и вы — счастливый обладатель 
+                                стильной стрижки-минутки!
+                            </p>
+                        </li>
+                        <li class="advantages-item">
+                            <h3 class="advantages-title">Круто</h3>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 3L21.8022 12L12.5 21L3.19775 12L12.5 3Z" fill="white"/>
+                            </svg>
+                                
+                            <p class="advantages-description">Забудьте, как вы стриглись раньше.
+                                Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+                            </p>
+                        </li>
+                        <li class="advantages-item">
+                            <h3 class="advantages-title">Дорого</h3>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 3L21.8022 12L12.5 21L3.19775 12L12.5 3Z" fill="white"/>
+                            </svg>
+                                
+                            <p class="advantages-description">Наши мастера — профессионалы
+                                своего дела и не могут стоить дешево. к тому же, разве цена
+                                не даёт определённый статус?
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <div class="index-columns">
+                    <section class="services">
+                        <h2 class="services-title">Популярные услуги</h2>
+                        <ul class="services-list">
+                            <li class="services-item">
+                                <span class="services-name">Стрижка машинкой</span>
+                                <div class="divider"></div>
+                                <span class="services-price">800  ₽ </span>
+                            </li>
+                            <li class="services-item">
+                                <span class="services-name">Стрижка усов</span>
+                                <div class="divider"></div>
+                                <span class="services-price">1200  ₽ </span>
+                            </li>
+                            <li class="services-item">
+                                <span class="services-name">Груминг</span>
+                                <div class="divider"></div>
+                                <span class="services-price">400  ₽ </span>
+                            </li>
+                            <li class="services-item">
+                                <span class="services-name">Комплексная стрижка</span>
+                                <div class="divider"></div>
+                                <span class="services-price">2300  ₽ </span>
+                            </li>
+                        </ul>
+                        <a class="button button-all" href="#">Посмотреть все
+                            <svg class="button-all-arrow" width="16" height="16" fill="none" 
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                             d="M9.6 8 4.3 2.7l1.4-1.4L12.4 8l-6.7 6.7-1.4-1.4L9.6 8Z"
+                              fill="#fff"/>
+                            </svg>
+                        </a>
+                    </section>
+                    <section class="gallery">
+                        <h2 class="gallery-title">Фотогалерея</h2>
+                        <div class="slider">
+                            <div class="slider-wrapper">
+                                <img class="slider-image" src="img/gallery.jpg" alt="Примеры работ" height="250" width="390">
+                                <div class="slider-controls">
+                                    <button class="slider-button slider-prev" type="button">
+                                        <span class="visually-hidden">Предыдущее фото</span>
+                                    </button>
+                                    <button class="slider-button slider-next" type="button">
+                                        <span class="visually-hidden">Следующее фото</span>
+                                    </button>
+                               </div> 
+                                <ol class="slider-pagination">
+                                    <li class="slider-pagination-item">
+                                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                                            <span class="visually-hidden">1 фото</span>
+                                        </button>
+                                    </li>
+                                    <li class="slider-pagination-item">
+                                        <button class="slider-pagination-button slider-pagination-button" type="button">
+                                            <span class="visually-hidden">2 фото</span>
+                                        </button>
+                                    </li>
+                                    <li class="slider-pagination-item">
+                                        <button class="slider-pagination-button slider-pagination-button" type="button">
+                                            <span class="visually-hidden">3 фото</span>
+                                        </button>
+                                    </li>
+                                    <li class="slider-pagination-item">
+                                        <button class="slider-pagination-button slider-pagination-button" type="button">
+                                            <span class="visually-hidden">4 фото</span>
+                                        </button>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>    
+                    </section>
+                </div>
+                <div class="index-columns contacts-wrapper">
+                    <section class="contacts">
+                        <h2 class="contacts-title">Контакты</h2>
+                        <h3 class="contacts-subtitle">Барбершоп "Бородинский"</h3>
+                        <address class="contacts-address">
+                            <P class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</P>
+                            <a class="contacts-phone" href="tel:89653143594">8-965-314-35-94</a>
+                        </address>
+                        <h3 class="contacts-subtitle">Время работы</h3>
+                        <ul class="contacts-schedule">
+                            <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
+                            <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
+                        </ul>
+                        <p class="contacts-navigation">
+                        <a class="button" href="#">Как проехать</a>
+                        <a class="button button-feedback" href="#">Обратная связь</a>
+                        </p>
+                    </section>
+                    <section class="appointment">
+                        <h2 class="appointment-title">Записаться</h2>
+                        <p class="appointment-text">Укажите желаемые дату и время и мы свяжемся с Вами в ближайшее время для подтверждения брони</p>
+                        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+                            <p class="field-group appointment-form-date">
+              
+                                <label class="form-label" for="appointment-date">
+                                  Дата</label>
+              
+              
+                              <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2020">
+                            </p>
+                            <p class="field-group appointment-form-time">
+              
+                                <label class="form-label" for="appointment-time">
+                                  Время</label>
+              
+              
+                              <input class="field" type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
+                            </p>
+                            <p class="field-group appointment-form-phone">
+                              <label class="form-label" for="appointment-phone">
+                                Телефон
+                              </label>
+                              <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+                            </p>
+                            <p class="field-group appointment-form-name">
+                              <label class="form-label" for="appointment-name">
+                                Ваше имя
+                              </label>
+                              <input class="field" type="text" id="appointment-name" name="appointment-name">
+                            </p>
+                            <button class="button appointment-submit" type="submit">Записаться</button>
+                          </form>
+                    </section>
+                </div>
             </div>
-            <section class="advantages">
-                <h2 class="visually-hidden">Преимущества</h2>
-                <ul class="advantages-list">
-                     <li class="advantages-item">
-                        <h3 class="advantages-title">Быстро</h3>
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 3L21.8022 12L12.5 21L3.19775 12L12.5 3Z" fill="white"/>
-                        </svg>
-                            
-                        <p class="advantages-description">Мы делаем свою работу быстро! 
-                            Два часа пролетят незаметно, и вы — счастливый обладатель 
-                            стильной стрижки-минутки!
-                        </p>
-                    </li>
-                    <li class="advantages-item">
-                        <h3 class="advantages-title">Круто</h3>
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 3L21.8022 12L12.5 21L3.19775 12L12.5 3Z" fill="white"/>
-                        </svg>
-                            
-                        <p class="advantages-description">Забудьте, как вы стриглись раньше.
-                             Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
-                        </p>
-                    </li>
-                    <li class="advantages-item">
-                        <h3 class="advantages-title">Дорого</h3>
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5 3L21.8022 12L12.5 21L3.19775 12L12.5 3Z" fill="white"/>
-                        </svg>
-                            
-                        <p class="advantages-description">Наши мастера — профессионалы
-                             своего дела и не могут стоить дешево. к тому же, разве цена
-                              не даёт определённый статус?
-                        </p>
-                    </li>
-                </ul>
-            </section>
-        <div class="index-columns-top">
-            <section class="services">
-                <h2 class="services-title">Популярные услуги</h2>
-                <ul class="services-list">
-                    <li class="services-item">
-                        <span class="services-name">Стрижка машинкой</span>
-                        <span class="services-price">800 р </span>
-                    </li>
-                    <li class="services-item">
-                        <span class="services-name">Стрижка усов</span>
-                        <span class="services-price">1200р </span>
-                    </li>
-                    <li class="services-item">
-                        <span class="services-name">Груминг</span>
-                        <span class="services-price">400 р </span>
-                    </li>
-                    <li class="services-item">
-                        <span class="services-name">Комплексная стрижка</span>
-                        <span class="services-price">2300 р </span>
-                    </li>
-                </ul>
-                <a class="button button-all" href="#"></a>
-            </section>
-            <section class="gallery">
-                <h2 class="gallery-title">Фотогалерея</h2>
-                <img class="slider-image" src="img/gallery.jpg" alt="Примеры работ" height="250" width="390">
-                <button class="slider-button slider-prev" type="button">
-                    <span class="visually-hidden">Предыдущее фото</span>
-                </button>
-                <button class="slider-button slider-next" type="button">
-                    <span class="visually-hidden">Следующее фото</span>
-                </button>
-                <ol class="slider-pagination">
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                            <span class="visually-hidden">1 фото</span>
-                        </button>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button" type="button">
-                            <span class="visually-hidden">2 фото</span>
-                        </button>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button" type="button">
-                            <span class="visually-hidden">3 фото</span>
-                        </button>
-                    </li>
-                    <li class="slider-pagination-item">
-                        <button class="slider-pagination-button slider-pagination-button" type="button">
-                            <span class="visually-hidden">4 фото</span>
-                        </button>
-                    </li>
-                    
-                
-                    
-                </ol>
-            </section>
-        </div>
-        <div class="index-columns-bottom">
-            <section class="contacts">
-                <h2 class="contacts-title">Контакты</h2>
-                <h3 class="contacts-subtitle">Барбершоп "Бородинский"</h3>
-                <address class="contacts-address">
-                    <P class="contacts-address-text">Москва, ул. Большая Черкизовская, 11</P>
-                    <a class="contacts-phone" href="tel:89653143594">8-965-314-35-94</a>
-                </address>
-                <h3 class="contacts-subtitle">Время работы</h3>
-                <ul class="contacts-schedule">
-                    <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
-                    <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
-                </ul>
-                <a class="button" href="#">Как проехать</a>
-                <a class="button button-feedback" href="#">Обратная связь</a>
-            </section>
-            <section class="appointment">
-                <h2 class="appointment-title">Записаться</h2>
-                <p>Укажите желаемые дату и время и мы свяжемся с Вами в ближайшее время для подтверждения брони</p>
-                <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <p class="appointment-form-date">
-                        <label class="form-label" for="appointment-date">Дата</label>
-                        <input type="text" id="appointment-date" name="appointment-date" placeholder="01.01.2023">
-                        
-                    </p>
-                    <p class="appointment-form-time">
-                        <label class="form-label" for="appointment-time">Время</label>
-                        <input type="text" id="appointment-time" name="appointment-time" placeholder="10:00">
-                        
-                    </p>
-                    <p class="appointment-form-phone">
-                        <label class="form-label" for="appointment-phone">Телефон</label>
-                        <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 555 35 35">
-                        
-                    </p>
-                    <p class="appointment-form-name">
-                        <label class="form-label" for="appointment-name">Ваше имя</label>
-                        <input type="text" id="appointment-name" name="appointment-name" placeholder="Иван">
-                        
-                    </p>
-                    <button class="button" type="submit">Записаться</button>
-                </form>
-            </section>
-        </div>
         </main>
         <footer class="page-footer">
-            <section class="footer-contacts">
-              <h2 class="visually-hidden">Контакты</h2>
-              <img class="footer-contacts-logo" src="img/logo-short-light.svg" alt="Логотип Барбершоп «Бородинский»">
-              <address class="footer-contacts-address">
-                <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-              </address>
-              <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
-            </section>
-            <section class="newsletter">
-              <h2 class="page-footer-title">Получайте лучшие предложения</h2>
-              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email">Email</label>
-                    <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-                <button class="button newsletter-button" type="submit">
-                  <span class="visually-hidden">Отправить</span>
-                </button>
-              </form>
-            </section>
-            <section class="footer-social">
-              <h2 class="page-footer-title">Давайте дружить</h2>
-              <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">Твиттер</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">ВКонтакте</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="#">
-                    <span class="visually-hidden">Инстаграм</span>
-                  </a>
-                </li>
-              </ul>
-              <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-            </section>
+            <div class="page-footer-container">
+                <section class="footer-contacts">
+                <h2 class="visually-hidden">Контакты</h2>
+                <img class="footer-contacts-logo" src="img/logo-short-light.svg" alt="Логотип Барбершоп «Бородинский»">
+                <address class="footer-contacts-address">
+                    <p class="footer-about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <a class="footer-contacts-address-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+                </address>
+                <a class="footer-contacts-map-link" href="#">Как нас найти?</a>
+                </section>
+                <section class="newsletter">
+                <h2 class="page-footer-title">Получайте лучшие предложения</h2>
+                <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="newsletter-label" for="newsletter-email">Email</label>
+                        <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+                    <button class="button newsletter-button" type="submit">
+                        <svg width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#a)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M11.6 6 7.3 1.7 8.7.3 15.4 7l-6.7 6.7-1.4-1.4L11.6 8H0V6h11.6Z" fill="#fff"/>
+                                </g><defs><filter id="a" x="-4" y=".3" width="23.4" height="21.4" filterUnits="userSpaceOnUse" 
+                                    color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_126516_829"/>
+                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_126516_829" result="shape"/></filter></defs></svg>
+                        <span class="visually-hidden">Отправить</span>
+                    </button>
+                </form>
+                </section>
+                <section class="footer-social">
+                <h2 class="page-footer-title">Давайте дружить</h2>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                    <a class="button button-twitter" href="#">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5185 1.50029C15.269 1.61093 15.0126 1.7043 14.7505 1.78011C15.0608 1.42925 15.2973
+                             1.01641 15.4417 0.564652C15.474 0.463389 15.4405 0.352549 15.3573 0.286321C15.2741 0.220042 15.1586
+                              0.212103 15.0671 0.266345C14.5106 0.596408 13.9102 0.833609 13.2806 0.972314C12.6465 0.352651 11.7852
+                               0 10.8948 0C9.01523 0 7.4861 1.52908 7.4861 3.40855C7.4861 3.55658 7.49548 3.70379 7.51402 3.84894C5.1817
+                                3.64416 3.0134 2.49781 1.52443 0.671343C1.47136 0.606242 1.38962 0.571157 1.30592 0.577867C1.22218 0.584423
+                                 1.14693 0.631648 1.10463 0.704227C0.802632 1.22242 0.642978 1.81509 0.642978 2.41811C0.642978 3.23942 0.936214 
+                                 4.01869 1.4542 4.62759C1.2967 4.57304 1.14386 4.50487 0.997986 4.42389C0.91967 4.3803 0.824093 4.38097 0.74629
+                                  4.42558C0.668435 4.47019 0.619622 4.55225 0.617573 4.64193C0.617215 4.65704 0.617215 4.67215 0.617215 4.68747C0.617215
+                                   5.91343 1.27703 7.01717 2.28582 7.61875C2.19915 7.6101 2.11254 7.59755 2.02649 7.5811C1.93777 7.56415 1.84655 7.59524
+                                    1.78673 7.6629C1.7268 7.73051 1.70698 7.82476 1.73458 7.91081C2.10798 9.07658 3.06933 9.93406 4.23152 10.1955C3.26761
+                                     10.7992 2.16529 11.1155 1.00813 11.1155C0.766675 11.1155 0.52384 11.1013 0.286178 11.0731C0.168116 11.0591 0.0552263
+                                      11.1288 0.0150184 11.2411C-0.0251895 11.3534 0.0174257 11.4787 0.117869 11.543C1.60443 12.4962 3.32333 13 5.08864
+                                       13C8.55901 13 10.73 11.3635 11.9401 9.99066C13.449 8.27883 14.3144 6.013 14.3144 3.77421C14.3144 3.68068 14.313
+                                        3.58624 14.3101 3.49209C14.9055 3.04356 15.418 2.50072 15.8351 1.87681C15.8985 1.78205 15.8916 1.65682 15.8182
+                                         1.56959C15.7449 1.48231 15.6227 1.45409 15.5185 1.50029Z" fill="white"/>
+                            </svg>
+                            
+                        <span class="visually-hidden">Твиттер</span>
+                    </a>
+                    </li>
+                    <li class="footer-social-item">
+                    <a class="button button-vk" href="#">
+                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9151 9.02702C15.8955 8.98052 15.8775 8.94297 15.8612 8.91257C15.5836 8.36534
+                             15.0529 7.69293 14.2692 6.89534L14.2529 6.87746L14.2447 6.86852L14.2365 6.85958H14.2284C13.8724
+                              6.4876 13.6471 6.23903 13.554 6.11206C13.3809 5.86885 13.3434 5.62206 13.4365 5.37348C13.5034
+                               5.18571 13.7532 4.78691 14.1859 4.17888C14.4145 3.85699 14.5941 3.59768 14.728 3.40275C15.6897
+                                2.00429 16.1061 1.11013 15.9771 0.720274L15.9281 0.629069C15.8955 0.573632 15.8089 0.523558
+                                 15.6701 0.47885C15.5314 0.432354 15.3534 0.425201 15.1362 0.455603L12.7376 0.473486C12.6984
+                                  0.459179 12.6429 0.459179 12.5711 0.47885C12.4992 0.496734 12.4633 0.505675 12.4633
+                                   0.505675L12.4208 0.528924L12.3882 0.555748C12.3604 0.573631 12.3294 0.605821 12.2967
+                                    0.652318C12.2641 0.697026 12.2363 0.750675 12.2135 0.811478C11.9522 1.54827 11.6551 
+                                    2.2314 11.322 2.86447C11.1162 3.2418 10.9284 3.56907 10.7554 3.84626C10.5839 4.12345
+                                     10.4386 4.32731 10.3227 4.45786C10.2067 4.58841 10.1006 4.69392 10.0059 4.77261C9.9112
+                                      4.85129 9.83936 4.88527 9.78874 4.87275C9.73812 4.86023 9.69077 4.84772 9.64669
+                                       4.83699C9.56831 4.78155 9.50626 4.70823 9.45891 4.61345C9.41156 4.51866 9.3789
+                                        4.40064 9.36258 4.25757C9.34625 4.1145 9.33645 3.99111 9.33319 3.88739C9.32992
+                                         3.78367 9.33155 3.63702 9.33808 3.44925C9.34461 3.26148 9.34625 3.13272 9.34625 
+                                         3.06655C9.34625 2.83586 9.35115 2.5837 9.35931 2.31367C9.36747 2.04363 9.37401 
+                                         1.82903 9.38054 1.66987C9.38544 1.5125 9.3887 1.3444 9.3887 1.16735C9.3887 0.99031 
+                                         9.3789 0.85261 9.35931 0.752464C9.33972 0.652318 9.31033 0.55396 9.27277 0.460967C9.23358
+                                          0.366186 9.17643 0.292865 9.10133 0.242792C9.02622 0.190931 8.93315 0.1498 8.82211 0.119398C8.52821
+                                           0.0460773 8.15266 0.00673414 7.6971 0.00136918C6.66353 -0.0111491 6.0006 0.0621721 5.7067 0.221333C5.59077
+                                            0.2875 5.48463 0.378705 5.38993 0.494946C5.29033 0.62907 5.27563 0.70239 5.34748 0.71312C5.68057 0.768558 
+                                            5.91733 0.899106 6.05612 1.10476L6.10674 1.21385C6.14593 1.29254 6.18511 1.43381 6.22267 
+                                            1.63411C6.26186 1.8344 6.28635 2.05615 6.29778 2.29936C6.32553 2.74286 6.32553 3.12378 
+                                            6.29778 3.44031C6.27002 3.75684 6.24389 4.00363 6.2194 4.17888C6.19491 4.35593 6.15735 
+                                            4.49899 6.10674 4.60808C6.05612 4.71717 6.02346 4.78512 6.00714 4.80837C5.99081 4.83341
+                                             5.97611 4.84772 5.96631 4.85308C5.89447 4.88348 5.81936 4.89958 5.74099 4.89958C5.66261
+                                              4.89958 5.56954 4.85666 5.45851 4.77261C5.34748 4.68677 5.23155 4.57053 5.11235 4.4221C4.99316
+                                               4.27366 4.85763 4.06443 4.70741 3.79618C4.55719 3.52794 4.40208 3.2114 4.24043 
+                                               2.84659L4.10654 2.58191C4.02326 2.41202 3.90896 2.16345 3.76528 1.83797C3.62159
+                                                1.5125 3.4926 1.19776 3.38156 0.893741C3.33748 0.76677 3.27053 0.668413 3.18236
+                                                 0.602245L3.13991 0.57542C3.11215 0.550383 3.06806 0.525347 3.00602 0.498522C2.9456 
+                                                 0.471697 2.88029 0.452026 2.81498 0.439508L0.532298 0.457391C0.298806 0.457391
+                                                  0.140422 0.514617 0.0571486 0.630858L0.0244923 0.686296C0.00816409 0.716697 0 
+                                                  0.764982 0 0.832938C0 0.899106 0.0163282 0.981368 0.0506173 1.07973C0.383712 
+                                                  1.93812 0.746198 2.76432 1.13807 3.56191C1.52995 4.3595 1.86958 5.00151 2.15858
+                                                   5.48793C2.44759 5.97436 2.7415 6.43395 3.04194 6.86494C3.34238 7.29771 3.53995 
+                                                   7.57311 3.63792 7.69472C3.73589 7.81633 3.811 7.90753 3.86651 7.96833L4.07551
+                                                    8.18651C4.2094 8.33315 4.40534 8.50662 4.66333 8.71049C4.92131 8.91435 5.20705
+                                                     9.11465 5.52219 9.31315C5.83569 9.50987 6.20144 9.6726 6.61781 9.796C7.03418 
+                                                     9.92118 7.43912 9.97125 7.83426 9.94621H8.79272C8.98703 9.92833 9.13398 9.86038
+                                                     9.23358 9.74592L9.26624 9.69943C9.2891 9.66366 9.30869 9.60643 9.32829 
+                                                     9.53132C9.34788 9.45443 9.35768 9.37216 9.35768 9.28096C9.35278 9.01987 
+                                                     9.37074 8.78381 9.41156 8.57457C9.45238 8.36534 9.49973 8.20618 9.55362 
+                                                     8.10067C9.60587 7.99337 9.66628 7.90395 9.73323 7.83242C9.80017 7.7591 
+                                                     9.84752 7.71439 9.87528 7.70009C9.90304 7.68399 9.92426 7.67505 9.94223 
+                                                     7.6679C10.0761 7.61961 10.2329 7.66611 10.4125 7.80917C10.5937 7.95224 
+                                                     10.7619 8.12928 10.9203 8.33852C11.0787 8.54775 11.2681 8.78381 11.4901
+                                                      9.0449C11.7122 9.306 11.9065 9.50092 12.0731 9.62968L12.2396 9.73877C12.3506
+                                                       9.81209 12.496 9.87826 12.6723 9.93906C12.8503 9.99987 13.0054 10.016 13.1393 
+                                                       9.98377L15.2717 9.948C15.4824 9.948 15.6473 9.91045 15.7632 9.83355C15.8792 
+                                                       9.75665 15.9494 9.67439 15.9722 9.58319C15.9951 9.49198 15.9951 9.38826 15.9771 
+                                                       9.27202C15.9543 9.15399 15.9347 9.07173 15.9151 9.02702Z" fill="white"/>
+                            </svg>
+                            
+                        <span class="visually-hidden">ВКонтакте</span>
+                    </a>
+                    </li>
+                    <li class="footer-social-item">
+                    <a class="button button-insta" href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2H4C2.89543 2 2 2.89543 2 4V12C2 13.1046
+                             2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V4C14 2.89543 13.1046 2 12 2ZM4 0C1.79086 0 0 
+                             1.79086 0 4V12C0 14.2091 1.79086 16 4 16H12C14.2091 16 16 14.2091 16 12V4C16 1.79086 14.2091 
+                             0 12 0H4ZM6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 
+                             8 6C6.89543 6 6 6.89543 6 8ZM8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 
+                             12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 
+                             3 12 3C11.4477 3 11 3.44772 11 4C11 4.55228 11.4477 5 12 5Z" fill="white"/>
+                            </svg>
+                            
+                        <span class="visually-hidden">Инстаграм</span>
+                    </a>
+                    </li>
+                </ul>
+                <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+                </section>
+            </div>    
           </footer>
+
+          <div class="modal-container">
+            <div class="modal modal-auth">
+                <button class="modal-close-button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <section class="modal-content">
+                    <h2 class="modal-title">Личный кабинет</h2>
+                    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <p class="field-group modal-field">
+                          <label class="visually-hidden" for="auth-login">Логин</label>
+                          <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+                        </p>
+                        <p class="field-group modal-field">
+                          <label class="visually-hidden" for="auth-password">Пароль</label>
+                          <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+                        </p>
+                        <p class="field-group auth-form-user-options">
+                            <label class="auth-form-checkbox control">
+                              <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                              <span class="control-mark"></span>
+                              <span class="control-label">Запомнить меня</span>
+                            </label>
+                            <a class="auth-form-recovery" href="#">Забыл пароль</a>
+                          </p>
+                          <button class="button auth-form-button" type="submit">Войти</button>
+                          <a class="button auth-form-register" href="#">Регистрация</a>
+                      </form>
+                  </section>
+            </div>
+          </div>
     </body>
 </html>
